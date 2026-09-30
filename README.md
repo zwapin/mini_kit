@@ -202,6 +202,10 @@ class NoteApiTest(KitAPITestCase):
 
 ## Sviluppo del kit
 
+I test del kit girano su `tests/sample_app`, un mini servizio sulle note che segue la stessa struttura a
+layer di un servizio vero: core manager (`managers.py`), REST manager (`rest_managers.py`), serializer
+e view.
+
 ```bash
 python3.12 -m venv .venv && .venv/bin/pip install -e ".[dev]"
 DJANGO_SETTINGS_MODULE=tests.settings .venv/bin/python -m django test tests
